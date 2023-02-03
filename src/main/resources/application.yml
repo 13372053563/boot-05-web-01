@@ -1,0 +1,12 @@
+spring:
+#  mvc:
+#    static-path-pattern: /res/**
+
+  web:
+    resources:
+      static-locations: [classpath:/haha]
+      add-mappings: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
