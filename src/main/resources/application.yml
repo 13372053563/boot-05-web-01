@@ -6,7 +6,14 @@ spring:
     resources:
       static-locations: [classpath:/haha]
       add-mappings: true
+      cache:
+        period: 11000
   mvc:
     hiddenmethod:
       filter:
         enabled: true
+    contentnegotiation:
+      favor-parameter: true
+server:
+  servlet:
+    context-path: /world
